@@ -64,13 +64,14 @@ disp(['Youngs Modulus using Extensometer Data: ', num2str(ym_ext)])
 
 ymx = strain.*1.02; 
 ymy = ym1(1) * ymx + ym1(2);
-diffym = abs(abs(stress)-abs(ymy));
-liney = linspace(min(stress_elastic).*.8, max(stress_elastic).*1.2 ,100);
+minys = find(strain==strain_elastic(end));
+diffym = abs(abs(stress(minys:end))-abs(ymy(minys:end)));
+liney = linspace(min(stress), max(stress) ,100);
 linex = (1/ym1(1))*(liney-ym1(2));
 
 indy = min(diffym);
 indys = find(diffym==indy);
-disp(['Yeild strength: ', num2str(ymy(indys))])
+disp(['Yeild strength: ', num2str(ymy(indys+minys))])
 disp(['Max Tensile Strength: ', num2str(max(stress))])
 
 % Plot the filtered data
