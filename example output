@@ -1,0 +1,10 @@
+>> Tensile_Analysis
+Data loaded successfully.
+First crop completed. Starting from row: 9
+Second crop completed. Stalling detected at rows: 9   17   26   27   28   29   30   31   32   33   34   35   36   37   38   39   40   41   42   43   44   45   46   47   48   49   50   51   52   71   78   86  100  101  102  103  104  105  106  107  108  109  110  111  112  113  114  115  116  117
+Third crop completed. Dramatic force drop detected at row: 61
+Youngs Modulus using Global Displacement: 4630137739.0355
+Youngs Modulus using Extensometer Data: 52583983.8861
+Yeild strength: 159703072.0008
+Max Tensile Strength: 247571300
+>> 
